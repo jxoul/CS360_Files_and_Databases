@@ -13,7 +13,6 @@ public class Database {
     public static void createViews(Connection conn) throws Exception{
         try {
 
-            //info views ontotitwn
             Statement stmt = conn.createStatement();
 
             String createView = new String( "create view patientinfo as select "+
@@ -41,7 +40,6 @@ public class Database {
                     " from Medicines ");
             stmt.executeUpdate(createView);
 
-            //Gia login asthenwn
              createView = new String("create view patientRecord as " +
                     "select c.amka, Concat('Stis ', c.edate,' episkefthikate to TEP me ', " +
                     "(select symptoms from Visits where ((amka = c.amka) and (edate=c.edate))) , "+
@@ -53,7 +51,6 @@ public class Database {
             stmt.executeUpdate(createView);
 
 
-            // gia duty report
             createView = new String("create view doctorsDutyRecord as "+
                 "select sid, edate, Concat('Stis ', edate, ' eixe efimeria sto tmima: ' , department , '.') as details from DoctorsOnDuty");
             stmt.executeUpdate(createView);
@@ -63,13 +60,11 @@ public class Database {
             stmt.executeUpdate(createView);
 
 
-            //gia covid report
             createView = new String("create view covid as select "+
                     "distinct info.amka , info.stoixeia from patientinfo as info where info.amka  in (select amka from Checks where did in (select did from Diagnosis where disease ='COVID'))");
             stmt.executeUpdate(createView);
 
 
-            //gia visit report
             createView =  new String("create view episkepseis as select "+
                     "x.edate, Concat('Onomatepwnumo: ', (select fname from Patients where amka = x.amka), ' ', (select lname from Patients where amka = x.amka), ' -> Symptwmata: ', x.symptoms) as info from Visits as x");
 
@@ -687,7 +682,6 @@ public class Database {
             insertNurD.executeUpdate();
 
 
-            //2021-1-2
             insertNurD.setString(1,"2008");
             insertNurD.setDate(2,Date.valueOf("2021-1-2"));
             insertNurD.setString(3, "Pathologiko");
@@ -753,7 +747,6 @@ public class Database {
             insertNurD.executeUpdate();
 
 
-            //2021-1-3
             insertNurD.setString(1,"2015");
             insertNurD.setDate(2,Date.valueOf("2021-1-3"));
             insertNurD.setString(3, "Pathologiko");
@@ -818,7 +811,6 @@ public class Database {
             insertNurD.setString(3, "Ypodoxi");
             insertNurD.executeUpdate();
 
-            //2021-1-4
             insertNurD.setString(1,"2001");
             insertNurD.setDate(2,Date.valueOf("2021-1-4"));
             insertNurD.setString(3, "Pathologiko");
@@ -884,7 +876,6 @@ public class Database {
             insertNurD.executeUpdate();
 
 
-            //2021-1-5
             insertNurD.setString(1,"2008");
             insertNurD.setDate(2,Date.valueOf("2021-1-5"));
             insertNurD.setString(3, "Pathologiko");
