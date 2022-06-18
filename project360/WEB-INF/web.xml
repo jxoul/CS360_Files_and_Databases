@@ -1,0 +1,181 @@
+<web-app>
+    <servlet>
+        <servlet-name>StuffLoginServlet</servlet-name>
+        <servlet-class>StuffLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StuffLoginServlet</servlet-name>
+        <url-pattern>/stufflogin</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>DoctorRegisterServlet</servlet-name>
+        <servlet-class>DoctorRegister</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoctorRegisterServlet</servlet-name>
+        <url-pattern>/doctorregister</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>NurseRegisterServlet</servlet-name>
+        <servlet-class>NurseRegister</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NurseRegisterServlet</servlet-name>
+        <url-pattern>/nurseregister</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>AdRegisterServlet</servlet-name>
+        <servlet-class>AdRegister</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdRegisterServlet</servlet-name>
+        <url-pattern>/adregister</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>PatientLoginServlet</servlet-name>
+        <servlet-class>PatientLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PatientLoginServlet</servlet-name>
+        <url-pattern>/patientlogin</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>PatientRegisterServlet</servlet-name>
+        <servlet-class>PatientRegister</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PatientRegisterServlet</servlet-name>
+        <url-pattern>/patientregister</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ExamineServlet</servlet-name>
+        <servlet-class>Examine</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExamineServlet</servlet-name>
+        <url-pattern>/examine</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>OrderCheckServlet</servlet-name>
+        <servlet-class>OrderCheck</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderCheckServlet</servlet-name>
+        <url-pattern>/ordercheck</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ReviewCheckServlet</servlet-name>
+        <servlet-class>ReviewCheck</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReviewCheckServlet</servlet-name>
+        <url-pattern>/reviewcheck</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>VisitServlet</servlet-name>
+        <servlet-class>Visit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VisitServlet</servlet-name>
+        <url-pattern>/visit</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ReportServlet</servlet-name>
+        <servlet-class>Report</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReportServlet</servlet-name>
+        <url-pattern>/report</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ChangeServlet</servlet-name>
+        <servlet-class>Change</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangeServlet</servlet-name>
+        <url-pattern>/change</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>AddCdServlet</servlet-name>
+        <servlet-class>AddCd</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddCdServlet</servlet-name>
+        <url-pattern>/addcd</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>CallOfDutyServlet</servlet-name>
+        <servlet-class>CallOfDuty</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CallOfDutyServlet</servlet-name>
+        <url-pattern>/callofduty</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>VisitReportServlet</servlet-name>
+        <servlet-class>VisitReport</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VisitReportServlet</servlet-name>
+        <url-pattern>/visitreport</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CovidReportServlet</servlet-name>
+        <servlet-class>CovidReport</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CovidReportServlet</servlet-name>
+        <url-pattern>/covidreport</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>DutyReportServlet</servlet-name>
+        <servlet-class>DutyReport</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DutyReportServlet</servlet-name>
+        <url-pattern>/dutyreport</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AskServlet</servlet-name>
+        <servlet-class>Ask</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AskServlet</servlet-name>
+        <url-pattern>/ask</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>

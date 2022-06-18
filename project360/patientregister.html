@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register Page</title>
+    <style type= "text/css">
+        body{ background-color: #666}
+        div{width: 600px; box-shadow:  1px 10px #a8a8a8; position: absolute; left: 50%;
+            transform: translate(-50%); background-color: aqua; padding-bottom: 10px}
+        h1{ color: brown; font-size: 50px; text-align: center; margin-top: 0; padding: 20px;}
+        input{display: block; margin: auto; font-size: 20px; width: 70%; border: 1px solid brown;
+            background-color: aliceblue; border-radius: 5px; height: 40px; padding: 10px}
+        input[type="submit"]:hover{background-color: blueviolet; border: 0}
+        input[type="submit"]{background-color: brown; color: #fff; cursor: pointer}
+        p{text-align: center; font-size: 20px;}
+        a{padding: 5px; border-radius: 3px; background-color: black; text-decoration: none;
+            display: inline-block; color: aliceblue;}
+        a:hover{color: #fff; background-color: beige; transition: all 0.3s}
+
+    </style>
+</head>
+<body>
+<div>
+    <h1>Patient Register</h1>
+    <form action="./patientregister">
+        <p> Insert your AMKA (*)</p>
+        <label>
+            <input type="text" name="amka">
+        </label>
+        <p> Insert your password (*)</p>
+        <label>
+            <input type="text" name="pass"><br>
+        </label>
+        <p> Insert your first name (*)</p>
+        <label>
+            <input type="text" name="fn"><br>
+        </label>
+        <p> Insert your last name (*)</p>
+        <label>
+            <input type="text" name="ln"><br>
+        </label>
+        <p> Insert your birthday (Year-Month-Day) (*)</p>
+        <label>
+            <input type="text" name="bd"><br>
+        </label>
+        <p> Insert your address</p>
+        <label>
+            <input type="text" name="addr"><br>
+        </label>
+        <p> Insert your insurer</p>
+        <label>
+            <input type="text" name="ins"><br>
+        </label>
+        <p> Insert a chronic disease</p>
+        <label>
+            <input type="text" name="cd1"><br>
+        </label>
+        <p> Insert a chronic disease</p>
+        <label>
+            <input type="text" name="cd2"><br>
+        </label>
+        <p> Insert a chronic disease</p>
+        <label>
+            <input type="text" name="cd3"><br>
+        </label>
+        <p> Insert a chronic disease</p>
+        <label>
+            <input type="text" name="cd4"><br>
+        </label>
+        <input type="submit" value="Register">
+        <p><a href="patienthome.html">Back</a></p>
+        <p><a href="index.html">Return to HomePage</a></p>
+    </form>
+</div>
+</body>
+</html>
